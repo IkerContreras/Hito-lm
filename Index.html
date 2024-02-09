@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML / JSON</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Archivos/estilo.CSS">
+    <link rel="icon" type="image/jpg" href="Archivos/Logo.jpg">
+</head>
+<body class="vh-100 overflow-hidden">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand fs-4" href="#">
+                <img src="Archivos/Logo.jpg" alt="logo" width="30px">
+            </a>
+            <!--Toggle Btn-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--SideBar-->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!--Sidebar Header-->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!--Sidebar Body-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="Archivos/xml.html">XML</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="Archivos/json.html">JSON</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="Archivos/Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="ocultar">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="Archivos/Categorias.html">Categorias</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="Archivos/ultimos.html">Últimos Posts</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="Archivos/siguenos.html">Síguenos en Redes Sociales</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item dropdown d-flex justify-content-center align-items-center">
+                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Webgrafía
+                        </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://getbootstrap.com/" target="_blank"><img src="Archivos/Bootstrap_logo.svg.png" alt="logo" width="25px"> Bootstrap</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/" target="_blank"><img src="Archivos/W3Schools_logo.svg.png" alt="logo" width="25px">  W3school</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/" target="_blank"><img src="Archivos/Youtube.png" alt="logo" width="25px">  Youtube</a></li>
+                          </ul>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <div class="lateral1">
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav fs-5">
+                                <div class="bonito">
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Categorias</a>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title text-dark" id="exampleModalLabel">Categorias</h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <ul class="list-group text-secondary">
+                                                            <li class="list-group-item">Redes</li>
+                                                            <li class="list-group-item">Html</li>
+                                                            <li class="list-group-item">Css</li>
+                                                            <li class="list-group-item">Bootstrap</li>
+                                                            <li class="list-group-item">Javascript</li>
+                                                          </ul>    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </li>
+                                </div>
+                                <div class="bonito">
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Últimos Posts</a>
+                                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title fs-5 text-dark" id="exampleModalLabel1">Últimos Posts</h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item"><a href="Archivos/xml.html" class="link-underline link-underline-opacity-0 text-secondary">XML</a></li>
+                                                            <li class="list-group-item"><a href="Archivos/json.html" class="link-underline link-underline-opacity-0 text-secondary">JSON</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>          
+                                    </li>
+                                </div>
+                                <div class="bonito">   
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Síguenos en Redes Sociales</a>
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title fs-5 text-dark" id="exampleModalLabel2">Síguenos en Redes Sociales</h3>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item">
+                                                                <a class=" ps-4" href="https://www.facebook.com/?locale=es_ES" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+                                                                <a class=" ps-5" href="https://twitter.com/?lang=es" target="_blank"> <i class="fa-brands fa-x-twitter"></i></a>
+                                                                <a class=" ps-5" href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                                                                <a class=" ps-5" href="https://es.linkedin.com/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                                                                <a class=" ps-5" href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                                                                <a class=" ps-5" href="https://web.telegram.org/k/" target="_blank"> <i class="fa-brands fa-telegram"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>     
+                                    </li>
+                                </div>    
+                            </ul>
+                        </div> 
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-white text-center">
+                <div class="pie col-12">
+                    <p>&copy Febrero 2024 Iker Contreras Esquer - Todos los derechos reservados</p>
+                </div>
+
+            </div>
+
+        </div>    
+    </footer>
+    
+</body>
+</html>
